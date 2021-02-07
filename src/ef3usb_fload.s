@@ -28,7 +28,7 @@ _ef3usb_fload:
         sei
 
         lda #$ff                ; request 64k data
-        wait_usb_tx_ok          ; request bytes (from XY)
+        wait_usb_tx_ok
         sta USB_DATA
         wait_usb_tx_ok
         sta USB_DATA
